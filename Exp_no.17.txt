@@ -1,0 +1,18 @@
+
+> values <- c(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+> dims <- c(3, 3)
+
+> my_array <- array(values, dim = dims)
+
+> dimnames(my_array) <- list(Row = c("Row1", "Row2", "Row3"), 
++                            Column = c("Col1", "Col2", "Col3"))
+
+> print(my_array)
+      Column
+Row    Col1 Col2 Col3
+  Row1    1    4    7
+  Row2    2    5    8
+  Row3    3    6    9
+
+> sink(file=NULL)

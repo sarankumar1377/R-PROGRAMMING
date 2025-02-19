@@ -1,0 +1,22 @@
+
+> file_path <- "sam.CSV"
+
+> data <- read.csv(file_path)
+
+> print(data)
+       Name.Age.....City
+1 1   Alice  30 New York
+2 2     Bob  25   London
+3 3 Charlie  35    Paris
+
+> head(data)
+       Name.Age.....City
+1 1   Alice  30 New York
+2 2     Bob  25   London
+3 3 Charlie  35    Paris
+
+> str(data)
+'data.frame':	3 obs. of  1 variable:
+ $ Name.Age.....City: chr  "1   Alice  30 New York" "2     Bob  25   London" "3 Charlie  35    Paris"
+
+> sink(file=NULL)

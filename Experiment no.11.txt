@@ -1,0 +1,26 @@
+
+> get_unique_chars <- function(input_string) {
++   unique_chars <- unique(strsplit(input_string, NULL)[[1]])
++   return(unique_chars)
++ }
+
+> get_unique_numbers <- function(input_vector) {
++   unique_numbers <- unique(input_vector)
++   return(unique_numbers)
++ }
+
+> input_string <- "programming"
+
+> unique_chars <- get_unique_chars(input_string)
+
+> cat("Unique characters in the string:", unique_chars, "\n")
+Unique characters in the string: p r o g a m i n 
+
+> input_vector <- c(1, 2, 3, 4, 2, 5, 3, 6, 1)
+
+> unique_numbers <- get_unique_numbers(input_vector)
+
+> cat("Unique numbers in the vector:", unique_numbers, "\n")
+Unique numbers in the vector: 1 2 3 4 5 6 
+
+> sink(file=NULL)

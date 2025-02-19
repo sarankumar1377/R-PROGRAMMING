@@ -1,0 +1,27 @@
+
+> my_vector <- c(1, 2, 3, 4, 5)
+
+> my_matrix <- matrix(1:6, nrow = 2, ncol = 3)
+
+> my_function <- function(x) {
++   return(x^2)
++ }
+
+> my_list <- list(my_vector = my_vector, my_matrix = my_matrix, my_function = my_function)
+
+> print(my_list)
+$my_vector
+[1] 1 2 3 4 5
+
+$my_matrix
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+
+$my_function
+function(x) {
+  return(x^2)
+}
+
+
+> sink(file=NULL)

@@ -1,0 +1,35 @@
+
+> numeric_vector <- c(1.5, 2.0, 3.5, 4.0)
+
+> character_vector <- c("apple", "banana", "cherry")
+
+> logical_vector <- c(TRUE, FALSE, TRUE, FALSE)
+
+> print("Numeric Vector:")
+[1] "Numeric Vector:"
+
+> print(numeric_vector)
+[1] 1.5 2.0 3.5 4.0
+
+> print(paste("Type:", typeof(numeric_vector)))
+[1] "Type: double"
+
+> print("\nCharacter Vector:")
+[1] "\nCharacter Vector:"
+
+> print(character_vector)
+[1] "apple"  "banana" "cherry"
+
+> print(paste("Type:", typeof(character_vector)))
+[1] "Type: character"
+
+> print("\nLogical Vector:")
+[1] "\nLogical Vector:"
+
+> print(logical_vector)
+[1]  TRUE FALSE  TRUE FALSE
+
+> print(paste("Type:", typeof(logical_vector)))
+[1] "Type: logical"
+
+> sink(file=NULL)
