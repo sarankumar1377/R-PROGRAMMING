@@ -1,0 +1,23 @@
+
+> set.seed(123)  # Setting seed for reproducibility
+
+> random_letters <- sample(LETTERS, 10, replace = TRUE)
+
+> letter_factor <- factor(random_letters)
+
+> print("Factor created from random sample:")
+[1] "Factor created from random sample:"
+
+> print(letter_factor)
+ [1] O S N C J R V K E T
+Levels: C E J K N O R S T V
+
+> extracted_levels <- levels(letter_factor)[1:5]
+
+> print("Extracted five levels:")
+[1] "Extracted five levels:"
+
+> print(extracted_levels)
+[1] "C" "E" "J" "K" "N"
+
+> sink(file = NULL)

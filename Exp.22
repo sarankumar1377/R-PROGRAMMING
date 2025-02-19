@@ -1,0 +1,24 @@
+
+> array1 <- matrix(1:9, nrow = 3, byrow = TRUE)
+
+> array2 <- matrix(10:18, nrow = 3, byrow = TRUE)
+
+> array3 <- matrix(19:27, nrow = 3, byrow = TRUE)
+
+> combined_array <- as.vector(t(rbind(array1, array2, array3)))
+
+> final_matrix <- matrix(combined_array, ncol = ncol(array1), byrow = TRUE)
+
+> print(final_matrix)
+      [,1] [,2] [,3]
+ [1,]    1    2    3
+ [2,]    4    5    6
+ [3,]    7    8    9
+ [4,]   10   11   12
+ [5,]   13   14   15
+ [6,]   16   17   18
+ [7,]   19   20   21
+ [8,]   22   23   24
+ [9,]   25   26   27
+
+> sink(file = NULL)

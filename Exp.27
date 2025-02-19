@@ -1,0 +1,31 @@
+
+> data("women")
+
+> print("Women dataset:")
+[1] "Women dataset:"
+
+> print(head(women))
+  height weight
+1     58    115
+2     59    117
+3     60    120
+4     61    123
+5     62    126
+6     63    129
+
+> height_factor <- factor(women$height)
+
+> print("Factor corresponding to height:")
+[1] "Factor corresponding to height:"
+
+> print(height_factor)
+ [1] 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72
+Levels: 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72
+
+> print("Levels of height factor:")
+[1] "Levels of height factor:"
+
+> print(levels(height_factor))
+ [1] "58" "59" "60" "61" "62" "63" "64" "65" "66" "67" "68" "69" "70" "71" "72"
+
+> sink(file=NULL)

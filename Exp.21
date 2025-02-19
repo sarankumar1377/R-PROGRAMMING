@@ -1,0 +1,43 @@
+
+> vector1 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+> vector2 <- c(10, 11, 12, 13, 14, 15, 16, 17, 18)
+
+> array_3d <- array(c(vector1, vector2), dim = c(3, 3, 2))
+
+> print("3D Array (Two 3x3 Matrices):")
+[1] "3D Array (Two 3x3 Matrices):"
+
+> print(array_3d)
+, , 1
+
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+, , 2
+
+     [,1] [,2] [,3]
+[1,]   10   13   16
+[2,]   11   14   17
+[3,]   12   15   18
+
+
+> second_row_second_matrix <- array_3d[2, , 2]
+
+> print("Second row of the second matrix:")
+[1] "Second row of the second matrix:"
+
+> print(second_row_second_matrix)
+[1] 11 14 17
+
+> element_3rd_row_3rd_col_1st_matrix <- array_3d[3, 3, 1]
+
+> print("Element at (3,3) in the first matrix:")
+[1] "Element at (3,3) in the first matrix:"
+
+> print(element_3rd_row_3rd_col_1st_matrix)
+[1] 9
+
+> sink(file = NULL)

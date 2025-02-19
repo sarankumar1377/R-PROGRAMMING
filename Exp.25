@@ -1,0 +1,51 @@
+
+> exam_data <- data.frame(
++   name = c('Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 
++            'Matthew', 'Laura', 'Kevin', 'Jon .... [TRUNCATED] 
+
+> new_exam_data <- data.frame(
++   name = c('Robert', 'Sophia'),
++   score = c(10.5, 9),
++   attempts = c(1, 3),
++   qualify = c('yes', 'no')
++ )
+
+> exam_data <- rbind(exam_data, new_exam_data)
+
+> exam_data_sorted <- exam_data[order(exam_data$name, exam_data$score), ]
+
+> print(exam_data_sorted)
+        name score attempts qualify
+1  Anastasia  12.5        1     yes
+2       Dima   9.0        3      no
+5      Emily   9.0        2      no
+4      James  12.0        3      no
+10     Jonas  19.0        1     yes
+3  Katherine  16.5        2     yes
+9      Kevin   8.0        2      no
+8      Laura  13.5        1      no
+7    Matthew  14.5        1     yes
+6    Michael  20.0        3     yes
+11    Robert  10.5        1     yes
+12    Sophia   9.0        3      no
+
+> write.csv(exam_data, "exam_data.csv", row.names = FALSE)
+
+> exam_data_from_file <- read.csv("exam_data.csv")
+
+> print(exam_data_from_file)
+        name score attempts qualify
+1  Anastasia  12.5        1     yes
+2       Dima   9.0        3      no
+3  Katherine  16.5        2     yes
+4      James  12.0        3      no
+5      Emily   9.0        2      no
+6    Michael  20.0        3     yes
+7    Matthew  14.5        1     yes
+8      Laura  13.5        1      no
+9      Kevin   8.0        2      no
+10     Jonas  19.0        1     yes
+11    Robert  10.5        1     yes
+12    Sophia   9.0        3      no
+
+> sink(file = NULL)
